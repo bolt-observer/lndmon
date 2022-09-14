@@ -51,9 +51,10 @@ type config struct {
 
 	// DisableGraph disables collection of graph metrics.
 	DisableGraph bool `long:"disablegraph" description:"Do not collect graph metrics"`
-
 	// DisableHtlc disables the collection of HTLCs metrics.
 	DisableHtlc bool `long:"disablehtlc" description:"Do not collect HTLCs metrics"`
+	// DisablePeer disables collection of peer metrics
+	DisablePeer bool `long:"disablepeer" description:"Do not collect peer metrics"`
 }
 
 var defaultConfig = config{
